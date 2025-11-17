@@ -1,155 +1,112 @@
-Listings Manager — Frontend Coding Exercise
+# 🛍️ Listings Manager (React + TypeScript)
 
-This project is a solution to the iGnosis Tech Frontend Engineering Coding Exercise.
-It implements a complete Listings Manager with search, filtering, sorting, pagination, and product details using a mocked API powered by MSW.
+A fully functional Listings Manager web application built as part of the
+iGnosis Tech Frontend Engineering Coding Exercise.
+Includes search, sorting, filtering, pagination, and detailed product views using MSW (Mock API).
 
-🚀 Tech Stack
+## ✨ Features
 
-React 18
+📄 Product Listing – Paginated list with clean UI  
+🔍 Search – Instant, case-insensitive search by name  
+🏷️ Filter – Category filtering  
+🔃 Sorting – By name or price (low→high, high→low)  
+📘 Product Details – Full details page with description  
+⏳ State Handling – Loading, error, empty handling  
+🧪 Testing – Vitest + React Testing Library  
+🎨 Responsive UI – Clean and accessible layout  
 
-TypeScript
+## 🧩 Tech Stack
 
-React Router
+Frontend: React 18, TypeScript, CSS  
+Routing: React Router  
+Mock API: MSW (Mock Service Worker)  
+Testing: Vitest + Testing Library  
+Build Tool: Vite  
 
-MSW (Mock Service Worker)
+## 📂 Project Structure
 
-Vitest + Testing Library
+```
+listings-manager/
+│
+├── src/
+│   ├── features/
+│   │   └── products/
+│   │        ├── ProductList.tsx
+│   │        ├── ProductDetails.tsx
+│   │        ├── useProducts.ts
+│   │        └── useProductDetails.ts
+│   ├── mocks/
+│   │   ├── handlers.ts
+│   │   └── data/products.json
+│   ├── tests/
+│   │   ├── ProductList.test.tsx
+│   │   └── ProductDetails.test.tsx
+│   ├── App.tsx
+│   └── main.tsx
+│
+└── README.md
+```
 
-CSS Modules / Custom Styling
+## ⚙️ Installation & Setup
 
-🎯 Features Implemented
-✅ 1. Product List
+### 1️⃣ Clone the repository
+```
+git clone https://github.com/vaishnavisinghvasu/listings-manager.git
+cd listings-manager
+```
 
-Paginated product list
-
-Shows name, price, category, stock status
-
-Clean responsive layout
-
-✅ 2. Search
-
-Real-time search by product name
-
-Case-insensitive matching
-
-Works with pagination and filters
-
-✅ 3. Filter
-
-Filter products by category
-
-Reset filter option included
-
-✅ 4. Sorting
-
-Sort by:
-
-Name (A → Z)
-
-Price (Low → High)
-
-Price (High → Low)
-
-Sorting works along with search & filter
-
-✅ 5. Product Details Page
-
-Displays full product details:
-
-Name
-
-Price
-
-Category
-
-Stock status
-
-Description
-
-Handles loading, error, and not-found states
-
-✅ 6. State Handling
-
-Smooth loading states
-
-Clear error messages
-
-Graceful empty state ("No products found")
-
-✅ 7. Accessibility
-
-Semantic HTML
-
-Labels for inputs
-
-Keyboard navigation friendly
-
-Aria attributes added where needed
-
-✅ 8. Testing (Vitest + React Testing Library)
-
-Implemented 2 meaningful tests:
-
-ProductList → loads and displays product list
-
-ProductDetails → fetches and renders a single product
-
-Both tests pass and mock API responses.
-
-📦 Project Structure
-src/
- ├── features/
- │    └── products/
- │         ├── ProductList.tsx
- │         ├── ProductDetails.tsx
- │         ├── useProducts.ts
- │         └── useProductDetails.ts
- ├── mocks/
- │    ├── handlers.ts
- │    └── data/products.json
- ├── tests/
- │    ├── ProductList.test.tsx
- │    └── ProductDetails.test.tsx
- ├── App.tsx
- └── main.tsx
-
-🧪 Running Tests
-yarn test
-
-▶️ Running the App
+### 2️⃣ Install dependencies
+```
 nvm use
 yarn install
+```
+
+### 3️⃣ Initialize MSW (one-time)
+```
 npx msw init public --save
+```
+
+### 4️⃣ Start the development server
+```
 yarn dev
+```
 
+Runs at: http://localhost:5173
 
-App runs at:
-➡️ http://localhost:5173
+## 🧪 Running Tests
+```
+yarn test
+```
 
-📝 Design Decisions & Notes
+ProductList → loads and displays list  
+ProductDetails → fetches and displays product  
 
-I kept the UI clean, minimal, and readable—prioritizing clarity over heavy styling.
+## 🛠️ Usage
 
-Toolbar (search, sort, filter) is custom-built without a UI library to show component design skills.
+Browse all products  
+Search by name  
+Filter by category  
+Sort by price or name  
+Click any product to view details  
+Experience loading/error states  
 
-Pagination, sorting, search, and filter integrate seamlessly because all logic lives inside useProducts().
+## 📝 Design Decisions
 
-Mock API behavior matches real-world REST patterns, so replacing MSW with a real backend would be straightforward.
+Toolbar UI built manually (no component library)  
+All product list logic managed inside custom hook  
+Simple, clean, accessible design  
+MSW ensures realistic API-like behavior  
+Tests focus on user experience, not internals  
 
-Tests focus on user-visible behavior instead of implementation details.
+## 🚀 If I Had More Time
 
-🚀 If I Had More Time
+Mobile-first improvements  
+Search debounce  
+Zustand for global state  
+More animations + skeleton loaders  
+Additional test coverage (sorting, filtering)  
 
-Add mobile-first responsive layout improvements
+## ✔ Submission
 
-Add debounce for search input
-
-Add global state (Zustand) for shared filter/search
-
-Write more tests covering sorting & category filtering
-
-Add animations and improved skeleton loaders
-
-✔ Submission
-
-This repository contains my completed solution for the iGnosis Tech frontend coding exercise.
+This repository contains my completed solution for the
+iGnosis Tech Frontend Engineering Coding Exercise.
