@@ -1,6 +1,6 @@
 [
   {
-    "id": "p-1",
+    "id": "1",
     "name": "Noise-Canceling Headphones",
     "price": 8999,
     "category": "Electronics",
@@ -8,7 +8,7 @@
     "description": "Over-ear Bluetooth with ANC."
   },
   {
-    "id": "p-2",
+    "id": "2",
     "name": "Ergonomic Chair",
     "price": 12999,
     "category": "Home",
@@ -16,7 +16,7 @@
     "description": "Adjustable lumbar support."
   },
   {
-    "id": "p-3",
+    "id": "3",
     "name": "Cotton T-Shirt",
     "price": 499,
     "category": "Clothing",
@@ -24,63 +24,63 @@
     "description": "100% cotton crew neck."
   },
   {
-    "id": "p-4",
+    "id": "4",
     "name": "LED Desk Lamp",
     "price": 1599,
     "category": "Home",
     "inStock": true
   },
   {
-    "id": "p-5",
+    "id": "5",
     "name": "Stainless Bottle",
     "price": 799,
     "category": "Home",
     "inStock": true
   },
   {
-    "id": "p-6",
+    "id": "6",
     "name": "Wireless Mouse",
     "price": 999,
     "category": "Electronics",
     "inStock": true
   },
   {
-    "id": "p-7",
+    "id": "7",
     "name": "Programming Book",
     "price": 2199,
     "category": "Books",
     "inStock": true
   },
   {
-    "id": "p-8",
+    "id": "8",
     "name": "Smartwatch",
     "price": 10999,
     "category": "Electronics",
     "inStock": false
   },
   {
-    "id": "p-9",
+    "id": "9",
     "name": "Denim Jacket",
     "price": 3499,
     "category": "Clothing",
     "inStock": true
   },
   {
-    "id": "p-10",
+    "id": "10",
     "name": "Coffee Grinder",
     "price": 2799,
     "category": "Home",
     "inStock": true
   },
   {
-    "id": "p-11",
+    "id": "11",
     "name": "Bluetooth Speaker",
     "price": 2499,
     "category": "Electronics",
     "inStock": true
   },
   {
-    "id": "p-12",
+    "id": "12",
     "name": "Notebook",
     "price": 199,
     "category": "Books",
